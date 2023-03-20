@@ -1,0 +1,79 @@
+:root {
+  --navbarBackground: #232536;
+}
+
+.navBarContainer {
+  width: 100%;
+  background-color: var(--navbarBackground);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.navBarContainer .navContainer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navBarContainer .navContainer .navLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style: none;
+  position: absolute;
+  justify-content: flex-end;
+  right: 100px;
+  left: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.navBarContainer .navContainer .navLinks.active {
+  left: 0%;
+}
+
+.navBarContainer .navContainer .navLinks .list {
+  text-decoration: none;
+  color: white;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.navBarContainer .navContainer .mobile {
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+  .navBarContainer .navContainer .mobile {
+    display: block;
+  }
+  .navBarContainer .navContainer .navLinks {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--navbarBackground);
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
+    justify-content: center;
+    transition: all 0.4s;
+    padding: 10px;
+  }
+
+  .navBarContainer .navContainer .navLinks .list {
+    margin-top: 30px;
+  }
+
+  .navBarContainer .navContainer .navLinks .list:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+  }
+}

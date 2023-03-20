@@ -1,0 +1,160 @@
+:root {
+  --mainBg: #f4f0f8;
+  --btnColor: #ffd050;
+}
+
+.blogContainer {
+  width: 100%;
+  background-color: var(--mainBg);
+  padding-top: 100px;
+}
+/* Blog Main background  */
+.blogContainer .blogDetailsContainer {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 2rem;
+}
+
+.blogContainer .blogDetailsContainer .left {
+  padding: 10px;
+  width: 500px;
+}
+
+.blogContainer .blogDetailsContainer .left .btn {
+  background-color: var(--btnColor);
+  border: none;
+  font-weight: 500;
+}
+
+.blogContainer .blogDetailsContainer .left .btn:hover {
+  box-shadow: 0px 0px 20px var(--btnColor);
+}
+
+.blogContainer .blogDetailsContainer .right {
+  padding: 10px;
+  width: 500px;
+}
+
+@media screen and (max-width: 1350px) {
+  .blogContainer {
+    padding-top: 70px;
+    padding-bottom: 120px;
+  }
+  .blogContainer .blogDetailsContainer .right .blogImage {
+    padding: 10px;
+    width: 400px;
+  }
+  .blogContainer .blogDetailsContainer .left {
+    padding: 10px;
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1243px) {
+  .blogContainer {
+    padding-top: 70px;
+    padding-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blogContainer .blogDetailsContainer .right .blogImage {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .blogContainer .blogDetailsContainer .right .blogImage {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+/* End Of Blog Main Background */
+
+/* Posts Section */
+.allPostContainer {
+  width: 85%;
+  margin: auto;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.allPostContainer .cardContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.allPostContainer .cardContainer .left {
+  padding: 10px;
+}
+
+.allPostContainer .cardContainer .left .postImages {
+  width: 400px;
+  height: 270px;
+  border-radius: 30px;
+}
+
+.allPostContainer .cardContainer .right {
+  padding: 10px;
+  width: 500px;
+}
+
+@media screen and (max-width: 1168px) {
+  .allPostContainer .cardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .allPostContainer .cardContainer .right {
+    padding: 10px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .allPostContainer .cardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .allPostContainer .cardContainer .left .postImages {
+    width: 350px;
+    height: 270px;
+    border-radius: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .allPostContainer .cardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .allPostContainer .cardContainer .left .postImages {
+    width: 300px;
+    height: 270px;
+    border-radius: 30px;
+  }
+}
+/* End OF Post Section */

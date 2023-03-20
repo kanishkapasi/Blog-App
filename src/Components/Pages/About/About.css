@@ -1,0 +1,102 @@
+.aboutContainer {
+  width: 100%;
+}
+/* AboutDetails Section */
+.aboutContainer .aDetails {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 100px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: 10px;
+}
+
+.aboutContainer .aDetails .left {
+  background-color: white;
+  z-index: 5;
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+}
+
+/* End Of About Details Section */
+
+/* Image Section */
+.image {
+  width: 100%;
+  z-index: -3;
+}
+
+.image .img {
+  width: 100%;
+  object-fit: cover;
+}
+/* End OF Image Section */
+
+/* Vision Section */
+.visionContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 2rem;
+  background-color: #f4f0f8;
+  border-radius: 30px;
+}
+
+.visionContainer .left {
+  padding: 10px;
+}
+/* End OF Vision Section */
+
+/* Team Section */
+.teamContainer {
+  width: 85%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.teamContainer .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  gap: 2rem;
+}
+
+.teamContainer .cards:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.teamContainer .cards .left {
+  width: 500px;
+}
+
+.teamContainer .cards .right .teamImage {
+  width: 400px;
+  height: 350px;
+}
+
+@media screen and (max-width: 1140px) {
+  .teamContainer .cards {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .teamContainer .cards .right .teamImage {
+    width: 300px;
+    height: 250px;
+  }
+}
+/* End Of Team Section */

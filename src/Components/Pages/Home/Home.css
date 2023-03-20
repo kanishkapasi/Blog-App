@@ -1,0 +1,333 @@
+:root {
+  --backgroundColor: #232536;
+  --btnandHover: #ffd050;
+  --miniBackground: #f4f0f8;
+  --postHover: #fbf6ea;
+  --btnColor: #592ea9;
+  --missonBg: #f4f0f8;
+  --authorHover: #fbf6ea;
+}
+
+.homeContainer {
+  width: 100%;
+}
+
+/* First Home Section */
+
+.homeContainer .background {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 85%;
+  align-items: center;
+  padding-top: 200px;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.homeContainer .background .right {
+  padding: 10px;
+}
+
+.homeContainer .background .left {
+  padding: 10px;
+}
+
+.homeContainer .background .left h1 {
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.homeContainer .background .left p .spn {
+  color: red;
+  font-weight: 500;
+}
+
+.homeContainer .background .left .btn {
+  background-color: var(--btnandHover);
+  font-weight: 500;
+}
+
+.homeContainer .background .left .btn:hover {
+  box-shadow: 0px 0px 15px var(--btnandHover);
+}
+
+.homeContainer .background .right .firstImage {
+  width: 500px;
+  height: 400px;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+@media screen and (max-width: 1300px) {
+  .homeContainer .background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .homeContainer .background .right .firstImage {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .homeContainer .background .right .firstImage {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+/* End Of First Home Section */
+
+/* Second Home Section */
+.postContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  gap: 4rem;
+  padding: 10px;
+  margin: auto;
+  padding: 10px;
+  margin-top: 120px;
+}
+
+.postContainer .featuredpost {
+  padding: 10px;
+}
+
+.postContainer .featuredpost .post {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 600px;
+  height: 370px;
+}
+
+.postContainer .featuredpost .btn {
+  background-color: var(--btnandHover);
+  font-weight: 500;
+  border: none;
+}
+
+.postContainer .featuredpost .btn:hover {
+  box-shadow: 0px 0px 25px var(--btnandHover);
+}
+
+.postContainer .allPost .card {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--postHover);
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 1400px) {
+  .postContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .postContainer .featuredpost {
+    text-align: center;
+  }
+  .postContainer .featuredpost .post {
+    width: 400px;
+    height: 350px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .postContainer .featuredpost {
+    text-align: center;
+  }
+  .postContainer .featuredpost .post {
+    width: 300px;
+    height: 250px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .postContainer .featuredpost .post {
+    width: 250px;
+    height: 250px;
+  }
+}
+/* End Of Second Home Section */
+
+/* Third Section */
+.missionContainer {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 100px;
+  padding: 20px;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  background-color: var(--missonBg);
+}
+
+.missionContainer .about {
+  padding: 10px;
+}
+.missionContainer .about .btn {
+  color: var(--btnColor);
+  font-weight: 700;
+  border: none;
+  transition: all 0.5s;
+}
+
+.missionContainer .about .btn:hover {
+  box-shadow: 0px 0px 15px var(--btnColor);
+}
+/* End Of Third Section */
+
+/* Fourth Home Section */
+.categoryContainer {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.categoryContainer .card {
+  padding: 15px;
+  transition: all 0.4s;
+  background-color: var(--postHover);
+  border: none;
+}
+
+.categoryContainer .card .icn {
+  width: 50px;
+  height: 50px;
+}
+
+.categoryContainer .card .icn {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  background-color: var(--missonBg);
+  border-radius: 10px;
+}
+
+.categoryContainer .card:hover {
+  background-color: var(--btnandHover);
+}
+
+@media screen and (max-width: 950px) {
+  .categoryContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .categoryContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .categoryContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  .categoryContainer .card {
+    text-align: center;
+  }
+
+  .categoryContainer .card .icn {
+    margin: auto;
+  }
+}
+/* End Of Fourth Home section */
+
+/* Fifth Home Section */
+.authorContainer {
+  width: 85%;
+  margin: auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.authorContainer .cards {
+  padding: 15px;
+  border-radius: 25px;
+  background-color: var(--missonBg);
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.authorContainer .cards:hover {
+  background-color: var(--authorHover);
+}
+
+.authorContainer .cards .social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.authorContainer .cards .social .so {
+  transition: all 0.4s;
+}
+
+.authorContainer .cards .social .so:hover {
+  transform: scaleX(1.25) scaleY(1.25);
+}
+
+@media screen and (max-width: 1000px) {
+  .authorContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .authorContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .authorContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+}
+/* End Of Fifth Home Section */
